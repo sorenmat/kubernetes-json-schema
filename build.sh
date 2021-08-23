@@ -1,4 +1,4 @@
-#!/bin/bash -xe
+#!/bin/sh -xe
 
 # This script uses openapi2jsonschema to generate a set of JSON schemas for
 # the specified Kubernetes versions in three different flavours:
@@ -11,6 +11,7 @@
 declare -a arr=(
     # Add here the version you want to re-generate
     master
+    v1.19.9
     )
 
 # This list is used only list of already genrated schema definition
